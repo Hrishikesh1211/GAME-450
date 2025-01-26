@@ -17,11 +17,14 @@
 # hands: 4 kings along with any of the three queens).
 
 import itertools
-
+ 
 def best_hand(hand):
     "From a 7-card hand, return the best 5 card hand."
     # Your code here
-    pass
+    #possible_hand = itertools.combinations(hand, 5)
+    return max(itertools.combinations(hand, 5), key = hand_rank)
+    
+    #return result
     
 # ------------------
 # Provided Functions
