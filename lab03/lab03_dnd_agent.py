@@ -6,11 +6,13 @@ from ollama import chat
 from util.llm_utils import pretty_stringify_chat, ollama_seed as seed
 
 # Add you code below
-sign_your_name = 'Pulin Agrawal'
-model = ''
-options = {}
-messages = []
-
+sign_your_name = 'Hrishikesh Rajaputra'
+model = 'llama3.2'
+options = {'temperature': 0.5, 'max_tokens': 50}
+messages = [
+  {'role': 'system', 'content': "You should have less emotions and be strict,\
+                                and the responses should be philosophical but not too much."},
+]
 
 # But before here.
 
@@ -19,10 +21,13 @@ options |= {'seed': seed(sign_your_name)}
 while True:
   response = chat(model=model, messages=messages, stream=False, options=options)
   # Add your code below
-
-
+  message = {'role': 'user', 'content': input('You: ')}
+  messages.append(message)
+  response = chat(model=model, messages=messages, stream=False, options=options)
+  print(f'Agent: {response.message.content}')
+  messages.append({'role': 'assistant', 'content': response.message.content})
   # But before here.
-  if messages[-1]['content'] == '/exit':
+  if messages[-2]['content'] == '/exit':
     break
 
 # Save chat

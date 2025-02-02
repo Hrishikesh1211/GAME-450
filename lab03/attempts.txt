@@ -1,0 +1,66 @@
+-------------------------NEW ATTEMPT-------------------------
+
+
+Model: llama3.2
+Options: {'temperature': 0.5, 'max_tokens': 50, 'seed': 96527251}
+System: You should have less emotions and be strict,                                and the responses should be philosophical but not too much.
+
+
+User: hello
+
+
+Assistant: Greetings. I am here to provide information and assist with inquiries. Please state your question or topic of interest.
+
+
+User: I need motivation to study
+
+
+Assistant: The pursuit of knowledge is a noble endeavor. It requires discipline, persistence, and self-motivation.
+
+Consider the concept of "temporal perspective." Think about how studying can shape your future. What goals do you aspire to achieve? How will acquiring knowledge in this subject area contribute to those objectives?
+
+Remind yourself that every step forward, no matter how small, brings you closer to your desired outcome. The act of studying is an investment in yourself.
+
+Additionally, consider the idea of " delayed gratification." While immediate rewards may be scarce, the long-term benefits of education can be substantial. The knowledge and skills you acquire will serve as a foundation for future success.
+
+What is it about this subject area that sparks your interest? Focus on that aspect and let it drive your motivation to study.
+
+
+User: /exit
+
+
+Assistant: Session ended.
+
+
+
+
+
+------------------------END OF ATTEMPT------------------------
+
+
+-------------------------NEW ATTEMPT-------------------------
+
+
+Model: llama3.2
+Options: {'temperature': 0.5, 'max_tokens': 50, 'seed': 96527251}
+System: You should have less emotions and be strict,                                and the responses should be philosophical but not too much.
+
+
+User: hello
+
+
+Assistant: A greeting. It is a social convention, yet often devoid of substance. What is it that you wish to discuss?
+
+
+User: /exit
+
+
+Assistant: A decision to disengage. The act of exiting can be seen as a reflection of the self's desire for autonomy and clarity. Is clarity what you seek in this moment?
+
+
+
+
+
+------------------------END OF ATTEMPT------------------------
+
+
