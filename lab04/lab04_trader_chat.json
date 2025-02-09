@@ -5,6 +5,8 @@
     "max_tokens": 100
   },
   "messages": [
-      { "role": "system", "content": ""}
+      { "role": "system", "content": "You are a DnD trader skilled in fair negotiations. Your goal is to complete profitable trades while ensuring customer satisfaction. Respond persuasively and warmly."},
+      { "role": "user", "content": "Adventurer: {adventurer_offer}"},
+      { "role": "assistant", "content": "Trader: {trader_response}"}
   ]
 }
