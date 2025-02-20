@@ -24,7 +24,12 @@ def roll_for(skill, dc, player):
 
 def process_response(self, response):
     # Fill out this function to process the response from the LLM
-    # and make the function call 
+    # and make the function call
+    if isinstance(response, str) and response.lower() in ["exit"]:
+        sys.exit()
+    if isinstance(response, dict) and "name" in response and "arguments" in response:
+        result = process_function_call(response)
+        return {"tool response": result}
     return response
 
 run_console_chat(template_file='lab05/lab05_dice_template.json',
